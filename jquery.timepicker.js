@@ -243,7 +243,7 @@ if(typeof jQuery != 'undefined') {
                 }).bind('focus.timepicker', function(event) {
                     i.open();
                 }).bind('blur.timepicker', function(event) {
-                    //i.close();
+                    i.close();
                 }).bind('change.timepicker', function(event) {
                     if (i.closed()) {
                         i.setTime($.fn.timepicker.parseTime(i.element.val()));
